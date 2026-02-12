@@ -97,6 +97,10 @@ public class MyLinkedList<T> implements MyLinkedListInterface<T> {
             next.prev = prev;
         }
 
+        x.value = null;
+        x.next = null;
+        x.prev = null;
+
         size--;
         return element;
     }
